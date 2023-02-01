@@ -5,8 +5,8 @@ async function main() {
 
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
-  const Token = await ethers.getContractFactory("RedPanda");
-  const token = await Token.deploy();
+  const Token = await ethers.getContractFactory("RoburnaDividendTracker");
+  const token = await Token.deploy("0xD7da2A0e9880315b0779C886AEe73291d65E80Ca", "0xD7da2A0e9880315b0779C886AEe73291d65E80Ca");
 
   console.log("Token address:", token.address);
 }

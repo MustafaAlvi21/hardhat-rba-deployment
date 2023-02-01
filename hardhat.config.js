@@ -22,7 +22,7 @@ const BSC_RPC_URL = "https://data-seed-prebsc-1-s1.binance.org:8545/"
 const bscAPIKey = ""
 
 module.exports = {
-  solidity: "0.8.12",
+  solidity: "0.8.7",
   networks: {
     hardhat: {
     },
@@ -49,14 +49,15 @@ module.exports = {
         network: "rba",
         chainId: 159,
         urls: {
-          apiURL: "https://testapi.rbascan.com/api/",
+          // apiURL: "https://testapi.rbascan.com/api/",
+          apiURL: "http://localhost:4000/api/",
           browserURL: "https://rbascan.com"
         }
       }
     ]
   },
   solidity: {
-    version: "0.8.12",
+    version: "0.8.7",
     settings: {
       optimizer: {
         enabled: true,
