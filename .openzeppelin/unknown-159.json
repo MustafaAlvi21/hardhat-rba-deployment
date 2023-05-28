@@ -1,0 +1,139 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xD7093018B486db463008521Ac66BdC801934bf8a",
+    "txHash": "0x4c5e74658a08c73a3a0fd942500458b132b0b70aeac1879003d43e01df53f01c"
+  },
+  "proxies": [
+    {
+      "address": "0x2f50b67254F97B3C5F66e47390ff3C22B606F382",
+      "txHash": "0x7b6ee885efcd8c4c80bdb7808438f4ed5f97df32ff5a790b421571dc68d0f5ce",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "93f251828f93e7a22a64ae7911080c831ec26711c5343ca0ef5947697c658d05": {
+      "address": "0x915Fb2874CB58d43EEA4C0D56C17C5079F592E1e",
+      "txHash": "0x86463566fa66d906a897dd5f6b63602b441b4b7a19604de16a3368f1439c2d3e",
+      "layout": {
+        "solcVersion": "0.8.0",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\ConvexCDP.sol:118"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\ConvexCDP.sol:123"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\ConvexCDP.sol:247"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\ConvexCDP.sol:251"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\ConvexCDP.sol:329"
+          },
+          {
+            "label": "CVX_Token",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(TOKEN)642",
+            "contract": "ConvexCDP",
+            "src": "contracts\\ConvexCDP.sol:370"
+          },
+          {
+            "label": "vlBCVX3_Token",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_contract(TOKEN)642",
+            "contract": "ConvexCDP",
+            "src": "contracts\\ConvexCDP.sol:371"
+          },
+          {
+            "label": "BentCVXDepositor",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "ConvexCDP",
+            "src": "contracts\\ConvexCDP.sol:372"
+          },
+          {
+            "label": "depositors",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "ConvexCDP",
+            "src": "contracts\\ConvexCDP.sol:373"
+          },
+          {
+            "label": "TrackBalance",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ConvexCDP",
+            "src": "contracts\\ConvexCDP.sol:375"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(TOKEN)642": {
+            "label": "contract TOKEN",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

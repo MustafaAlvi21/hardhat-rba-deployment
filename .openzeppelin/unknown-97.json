@@ -1,0 +1,659 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xAE388b04bd6a82EFDB34c0EE5A4C477d51D9ac8a",
+    "txHash": "0x6a2b37578d0d0cdf0f1e3f45ceaf571f47cc46623311f8c96e12f97ea9ef77b7"
+  },
+  "proxies": [
+    {
+      "address": "0xad348a52093a372A598f442c5151883029E5D01e",
+      "txHash": "0x042e3e52f0f14e31dd505635aa34e35f7993b6580cdc4480d6aebb78b6127122",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc2df1C342FEa0e417BE04AdBa823f826005dafdA",
+      "txHash": "0x357642bc7f96cb6324f005f1c2dd0130fe9624fca953ca21d397209ede7c9819",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x513FA53Ba0beAE74f2a9D46A92ceffb44e1aa243",
+      "txHash": "0x145597a3a03fa6c42b0bba3d670de95ef1cca698b498ca4549c84362fbd86370",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xcaCb3af482704362Fcc7387A7dD1d5fDb82221D7",
+      "txHash": "0x346a332a61206720b33b60ea2f552911c6b38716ced6aefb917386d6eaaf4751",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4F5cBFb53904cc5060cBCfd209F0886f4b548f27",
+      "txHash": "0x9f44637a6e4a39b090683af07e4b25a768d5ea4a21b6515103399ab34ddd02c7",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "2a98c534ff80e8b189b3db3baa4ae3931966c338f9c22a75a7c40cfa08690605": {
+      "address": "0xC2F11B27148Bb04cf83d1fa2249E5D70376Af4c6",
+      "txHash": "0x659e463d69a6e259bea36df54ea745444e26188d5226296296d4180ea781c592",
+      "layout": {
+        "solcVersion": "0.8.0",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\CurveCDP.sol:118"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\CurveCDP.sol:123"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\CurveCDP.sol:247"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CurveCDP.sol:251"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CurveCDP.sol:329"
+          },
+          {
+            "label": "CRV_Token",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(TOKEN)633",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:368"
+          },
+          {
+            "label": "sdCRV3_Token",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_contract(TOKEN)633",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:369"
+          },
+          {
+            "label": "DEPOSITER",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:370"
+          },
+          {
+            "label": "depositors",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:371"
+          },
+          {
+            "label": "TrackBalance",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:373"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(TOKEN)633": {
+            "label": "contract TOKEN",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "3b04a97de087a6e9d09799e2de4c077e2402cc405ffa1729ee7d5883c4fc27aa": {
+      "address": "0xFdB3Cc8a3B14D8d6cE262e9A53D02b07BB830A7D",
+      "txHash": "0x45e0485dc1e8a1de971a02746cdb8ac084a5c0c40736632cac3046ace6d5cbe5",
+      "layout": {
+        "solcVersion": "0.8.0",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\CurveCDP.sol:118"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\CurveCDP.sol:123"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\CurveCDP.sol:247"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CurveCDP.sol:251"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CurveCDP.sol:329"
+          },
+          {
+            "label": "CRV_Token",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(TOKEN)633",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:368"
+          },
+          {
+            "label": "sdCRV3_Token",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_contract(TOKEN)633",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:369"
+          },
+          {
+            "label": "DEPOSITER",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:370"
+          },
+          {
+            "label": "depositors",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:371"
+          },
+          {
+            "label": "TrackBalance",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:373"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(TOKEN)633": {
+            "label": "contract TOKEN",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "93f251828f93e7a22a64ae7911080c831ec26711c5343ca0ef5947697c658d05": {
+      "address": "0x857B61B71c2cE3F5aEf0fb133bb5f29a34825734",
+      "txHash": "0x5afd47a94e63781aca55f7aad9bcfc3accd7ca06b3e6ef79cc2160febaebcb05",
+      "layout": {
+        "solcVersion": "0.8.0",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\Convex_CDP.sol:118"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\Convex_CDP.sol:123"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\Convex_CDP.sol:247"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\Convex_CDP.sol:251"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\Convex_CDP.sol:329"
+          },
+          {
+            "label": "CVX_Token",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(TOKEN)642",
+            "contract": "Convex_CDP",
+            "src": "contracts\\Convex_CDP.sol:370"
+          },
+          {
+            "label": "vlBCVX3_Token",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_contract(TOKEN)642",
+            "contract": "Convex_CDP",
+            "src": "contracts\\Convex_CDP.sol:371"
+          },
+          {
+            "label": "BentCVXDepositor",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "Convex_CDP",
+            "src": "contracts\\Convex_CDP.sol:372"
+          },
+          {
+            "label": "depositors",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "Convex_CDP",
+            "src": "contracts\\Convex_CDP.sol:373"
+          },
+          {
+            "label": "TrackBalance",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Convex_CDP",
+            "src": "contracts\\Convex_CDP.sol:375"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(TOKEN)642": {
+            "label": "contract TOKEN",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "609275e8f5c1fab0cc06d5700c57957af4c1fdf07a57a08f118b16f90bbbd0ed": {
+      "address": "0x5F0D78F822B22e306c897D24118dDcEF33c5D508",
+      "txHash": "0x69044cb4fe37ca0c6f9a8e51cdab77b084446a10784f770d10483dcadab5371c",
+      "layout": {
+        "solcVersion": "0.8.0",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\Bent_CDP.sol:117"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\Bent_CDP.sol:122"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\Bent_CDP.sol:245"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\Bent_CDP.sol:249"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\Bent_CDP.sol:327"
+          },
+          {
+            "label": "Bent_Token",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(TOKEN)642",
+            "contract": "Bent_CDP",
+            "src": "contracts\\Bent_CDP.sol:372"
+          },
+          {
+            "label": "vlBent3_Token",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_contract(TOKEN)642",
+            "contract": "Bent_CDP",
+            "src": "contracts\\Bent_CDP.sol:373"
+          },
+          {
+            "label": "BentFinance",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "Bent_CDP",
+            "src": "contracts\\Bent_CDP.sol:374"
+          },
+          {
+            "label": "depositors",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "Bent_CDP",
+            "src": "contracts\\Bent_CDP.sol:375"
+          },
+          {
+            "label": "TrackBalance",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Bent_CDP",
+            "src": "contracts\\Bent_CDP.sol:377"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(TOKEN)642": {
+            "label": "contract TOKEN",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "bf3175711cec452f90e3ab170cdc6a9dd9cfbbe44c157633c4407f7f1a5ba1ce": {
+      "address": "0x5eEd5FbE0de161b81099384325Db0257DA600Bb1",
+      "txHash": "0x91c34f35de22feac78e09b611f1ba54edb61820286a89708ed0c78885c323ab4",
+      "layout": {
+        "solcVersion": "0.8.0",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\CurveCDP.sol:118"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\CurveCDP.sol:123"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\CurveCDP.sol:247"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CurveCDP.sol:251"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\CurveCDP.sol:329"
+          },
+          {
+            "label": "CRV_Token",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(TOKEN)642",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:370"
+          },
+          {
+            "label": "sdCRV3_Token",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_contract(TOKEN)642",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:371"
+          },
+          {
+            "label": "DEPOSITER",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:372"
+          },
+          {
+            "label": "SD_CRV_Token",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_contract(TOKEN)642",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:373"
+          },
+          {
+            "label": "depositors",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_uint256",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:374"
+          },
+          {
+            "label": "TrackBalance",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Curve_CDP",
+            "src": "contracts\\CurveCDP.sol:376"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(TOKEN)642": {
+            "label": "contract TOKEN",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

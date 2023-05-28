@@ -1,0 +1,362 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x3591C6d921eB0e31333b1a6Deb78B14965f2f519",
+    "txHash": "0xbc6b205c6b3d56f376c21b4ae92d724a48e17e6c9f9b1980c2f2c43bd629fc03"
+  },
+  "proxies": [
+    {
+      "address": "0x28edA866dB64E4647483226AF1Ed78a94C88945e",
+      "txHash": "0xa5b3f6c1d158894a90485b12dfb286420429a21ee7b24c7b572c2d3678753942",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "ba8bfacc76779dfac376f7000c9a371ebf03ca961f215ecb03f4416e6b71b5fd": {
+      "address": "0xA524F25856DB3FeA4ccC68b5E0f5711d3E01C11E",
+      "txHash": "0x8d842e1022b6c9165878df5497fc7a0981230e497c5dbe12910a17f782a60d5f",
+      "layout": {
+        "solcVersion": "0.8.0",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\dutch-auction.sol:146"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\dutch-auction.sol:151"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\dutch-auction.sol:274"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\dutch-auction.sol:278"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\dutch-auction.sol:356"
+          },
+          {
+            "label": "RootX",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(IERC20)677",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:519"
+          },
+          {
+            "label": "NOB",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_contract(IERC1155Upgradeable)795",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:520"
+          },
+          {
+            "label": "RBA",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:521"
+          },
+          {
+            "label": "NOB_Available",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:522"
+          },
+          {
+            "label": "NOB_ID",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_uint256",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:523"
+          },
+          {
+            "label": "discountRate",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_uint256",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:525"
+          },
+          {
+            "label": "startAt",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_uint256",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:526"
+          },
+          {
+            "label": "expiresAt",
+            "offset": 0,
+            "slot": "108",
+            "type": "t_uint256",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:527"
+          },
+          {
+            "label": "DURATION",
+            "offset": 0,
+            "slot": "109",
+            "type": "t_uint256",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:528"
+          },
+          {
+            "label": "roundDuration",
+            "offset": 0,
+            "slot": "110",
+            "type": "t_uint256",
+            "contract": "BURNER",
+            "src": "contracts\\dutch-auction.sol:529"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC1155Upgradeable)795": {
+            "label": "contract IERC1155Upgradeable",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)677": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "6a9b075347bcb22907c46da0008db260f836ed1aa7ecf98f130e2edcf4fd05b6": {
+      "address": "0x114877aC84Ef9dBf9B0EEe8541e1800C6f4C5AF1",
+      "txHash": "0x73c69b0e4e29077b17db24eb60cd03999beedf8af645857917195759c36b57e3",
+      "layout": {
+        "solcVersion": "0.8.0",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\dutch-auction.sol:147"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\dutch-auction.sol:152"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\dutch-auction.sol:275"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\dutch-auction.sol:279"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\dutch-auction.sol:357"
+          },
+          {
+            "label": "RootX",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(IERC20)677",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:582"
+          },
+          {
+            "label": "NOB",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_contract(IERC1155Upgradeable)795",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:583"
+          },
+          {
+            "label": "RBA",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:584"
+          },
+          {
+            "label": "NOB_Available",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:585"
+          },
+          {
+            "label": "NOB_ID",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_uint256",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:586"
+          },
+          {
+            "label": "discountRate",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_uint256",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:588"
+          },
+          {
+            "label": "startAt",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_uint256",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:589"
+          },
+          {
+            "label": "expiresAt",
+            "offset": 0,
+            "slot": "108",
+            "type": "t_uint256",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:590"
+          },
+          {
+            "label": "DURATION",
+            "offset": 0,
+            "slot": "109",
+            "type": "t_uint256",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:591"
+          },
+          {
+            "label": "roundDuration",
+            "offset": 0,
+            "slot": "110",
+            "type": "t_uint256",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:592"
+          },
+          {
+            "label": "Bearx",
+            "offset": 0,
+            "slot": "111",
+            "type": "t_contract(IERC721Upgradeable)903",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:595"
+          },
+          {
+            "label": "pause",
+            "offset": 20,
+            "slot": "111",
+            "type": "t_bool",
+            "contract": "BURNER_2",
+            "src": "contracts\\dutch-auction.sol:596"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC1155Upgradeable)795": {
+            "label": "contract IERC1155Upgradeable",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)677": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC721Upgradeable)903": {
+            "label": "contract IERC721Upgradeable",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

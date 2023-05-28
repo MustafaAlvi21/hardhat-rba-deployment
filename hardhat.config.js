@@ -17,20 +17,32 @@ task("accounts", "Prints the list of accounts", async () => {
 
 
 /** @type import('hardhat/config').HardhatUserConfig */
+const ETH_RPC_URL = "https://mainnet.infura.io/v3/c8b76b19dbfa4b658fd18a162bed2746"
 const RBA_RPC_URL = process.env.RBA_RPC_URL || "https://preseed-testnet-1.roburna.com/"
 const BSC_RPC_URL = "https://data-seed-prebsc-1-s1.binance.org:8545/"
+const MATIC_RPC_URL = "https://matic-mumbai.chainstacklabs.com"
 const bscAPIKey = ""
 
 module.exports = {
-  solidity: "0.8.7",
+  solidity: "0.8.0",
   networks: {
     hardhat: {
     },
     local: {
       url: 'http://127.0.0.1:8545/'
     },
+    ethereum: {
+      url: ETH_RPC_URL,
+      accounts: [process.env.privateKey],
+      saveDeployments: true,
+    },
     binance: {
       url: BSC_RPC_URL,
+      accounts: [process.env.privateKey],
+      saveDeployments: true,
+    },
+    matic: {
+      url: MATIC_RPC_URL,
       accounts: [process.env.privateKey],
       saveDeployments: true,
     },
@@ -57,7 +69,7 @@ module.exports = {
     ]
   },
   solidity: {
-    version: "0.8.7",
+    version: "0.8.0",
     settings: {
       optimizer: {
         enabled: true,
@@ -65,7 +77,6 @@ module.exports = {
       },
     },
   },
-
 };
 
 /***
